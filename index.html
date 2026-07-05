@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
   <style>
     /* ============================================================
-       ALL STYLES SCOPED UNDER .p-story — ikas CSS isolationsa
+       ALL STYLES SCOPED UNDER .p-story — ikas CSS isolation
        ============================================================ */
 
     .p-story *, .p-story *::before, .p-story *::after {
@@ -135,17 +135,17 @@
        01 — HERO
     ============================================================ */
     .p-hero {
-      padding: 120px 0 88px;
+      padding: 64px 0 56px;
     }
 
     .p-hero__title {
-      font-size: clamp(40px, 6.4vw, 88px);
+      font-size: clamp(32px, 4.6vw, 58px);
       font-weight: 900;
       letter-spacing: -0.04em;
-      line-height: 1.02;
+      line-height: 1.04;
       color: var(--graphite);
       max-width: 900px;
-      margin-top: 32px;
+      margin-top: 26px;
     }
 
     .p-hero__title em {
@@ -154,7 +154,7 @@
     }
 
     .p-hero__sub {
-      margin-top: 28px;
+      margin-top: 22px;
       font-size: 12px;
       font-weight: 500;
       letter-spacing: 0.25em;
@@ -168,11 +168,11 @@
       overflow: hidden;
     }
 
+    /* NOT: iframe içinde vh birimi iframe yüksekliğine göre hesaplanır —
+       bu yüzden tüm görsel yükseklikleri sabit px */
     .p-photo img {
       width: 100%;
-      height: 72vh;
-      min-height: 340px;
-      max-height: 640px;
+      height: 420px;
       object-fit: cover;
       object-position: center;
     }
@@ -218,7 +218,7 @@
        02 — BAŞLANGIÇ (opening chapter)
     ============================================================ */
     .p-opening {
-      padding: 120px 0 128px;
+      padding: 80px 0 88px;
     }
 
     .p-opening__grid {
@@ -234,7 +234,7 @@
     }
 
     .p-chapter__num {
-      font-size: clamp(56px, 7vw, 96px);
+      font-size: clamp(44px, 5vw, 68px);
       font-weight: 900;
       letter-spacing: -0.05em;
       line-height: 1;
@@ -247,7 +247,7 @@
     }
 
     .p-opening__lead {
-      font-size: clamp(21px, 2.4vw, 30px);
+      font-size: clamp(18px, 2vw, 24px);
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1.4;
@@ -261,8 +261,8 @@
     }
 
     .p-opening__body {
-      margin-top: 36px;
-      font-size: 16px;
+      margin-top: 28px;
+      font-size: 15px;
       font-weight: 400;
       line-height: 1.85;
       color: var(--grey);
@@ -275,17 +275,17 @@
     .p-manifesto {
       background: var(--graphite);
       color: var(--platinum);
-      padding: 136px 0 120px;
+      padding: 88px 0 80px;
     }
 
     .p-manifesto__quote {
-      font-size: clamp(26px, 3.6vw, 52px);
+      font-size: clamp(21px, 2.7vw, 36px);
       font-weight: 700;
       letter-spacing: -0.025em;
-      line-height: 1.2;
-      max-width: 880px;
-      margin-top: 48px;
-      margin-bottom: 88px;
+      line-height: 1.25;
+      max-width: 820px;
+      margin-top: 36px;
+      margin-bottom: 64px;
     }
 
     .p-manifesto__quote em {
@@ -300,7 +300,7 @@
     }
 
     .p-pillar {
-      padding: 44px 40px 0 0;
+      padding: 36px 40px 0 0;
       border-right: 1px solid rgba(255,255,255,0.08);
       display: flex;
       flex-direction: column;
@@ -334,27 +334,27 @@
        04 — MATERYALLER (duality split)
     ============================================================ */
     .p-materials {
-      padding: 120px 0 0;
+      padding: 80px 0 0;
     }
 
     .p-materials__head {
       max-width: 1280px;
-      margin: 0 auto 72px;
+      margin: 0 auto 52px;
       padding: 0 48px;
     }
 
     .p-materials__title {
-      font-size: clamp(28px, 3.5vw, 48px);
+      font-size: clamp(24px, 2.8vw, 36px);
       font-weight: 900;
       letter-spacing: -0.03em;
-      line-height: 1.05;
-      margin-top: 24px;
+      line-height: 1.08;
+      margin-top: 20px;
       max-width: 700px;
     }
 
     .p-materials__intro {
-      margin-top: 24px;
-      font-size: 16px;
+      margin-top: 20px;
+      font-size: 15px;
       line-height: 1.85;
       color: var(--grey);
       max-width: 620px;
@@ -367,11 +367,11 @@
     }
 
     .p-duality__panel {
-      padding: 88px 64px 96px;
+      padding: 64px 56px 72px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      min-height: 380px;
+      gap: 16px;
+      min-height: 300px;
     }
 
     .p-duality__panel--wood {
@@ -395,7 +395,7 @@
     }
 
     .p-duality__name {
-      font-size: clamp(30px, 4vw, 56px);
+      font-size: clamp(26px, 3.2vw, 42px);
       font-weight: 900;
       letter-spacing: -0.03em;
       line-height: 1;
@@ -438,15 +438,15 @@
     ============================================================ */
     .p-symbol {
       background: var(--linen);
-      padding: 128px 0 136px;
+      padding: 88px 0 96px;
     }
 
     .p-symbol__grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      gap: 64px;
       align-items: center;
-      margin-top: 64px;
+      margin-top: 44px;
     }
 
     .p-symbol__figure {
@@ -458,7 +458,7 @@
     }
 
     .p-symbol__figure svg {
-      width: min(340px, 70vw);
+      width: min(280px, 60vw);
       height: auto;
     }
 
@@ -500,16 +500,16 @@
     }
 
     .p-symbol__title {
-      font-size: clamp(28px, 3.5vw, 46px);
+      font-size: clamp(24px, 2.8vw, 36px);
       font-weight: 900;
       letter-spacing: -0.03em;
-      line-height: 1.08;
-      margin-top: 24px;
+      line-height: 1.1;
+      margin-top: 20px;
     }
 
     .p-symbol__body {
-      margin-top: 28px;
-      font-size: 16px;
+      margin-top: 24px;
+      font-size: 15px;
       line-height: 1.85;
       color: var(--grey);
     }
@@ -518,7 +518,7 @@
        06 — DENEYİM (gallery + closing prose)
     ============================================================ */
     .p-experience {
-      padding: 120px 0 32px;
+      padding: 80px 0 24px;
     }
 
     .p-gallery {
@@ -533,7 +533,7 @@
 
     .p-gallery__item img {
       width: 100%;
-      height: 440px;
+      height: 360px;
       object-fit: cover;
       object-position: center;
       transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
@@ -545,12 +545,12 @@
 
     .p-experience__prose {
       max-width: 720px;
-      margin: 88px auto 0;
+      margin: 64px auto 0;
       padding: 0 48px;
     }
 
     .p-experience__lead {
-      font-size: clamp(19px, 2.2vw, 26px);
+      font-size: clamp(17px, 1.9vw, 22px);
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1.45;
@@ -558,8 +558,8 @@
     }
 
     .p-experience__body {
-      margin-top: 28px;
-      font-size: 16px;
+      margin-top: 24px;
+      font-size: 15px;
       line-height: 1.85;
       color: var(--grey);
     }
@@ -568,7 +568,7 @@
        07 — CTA (dark closing)
     ============================================================ */
     .p-cta-band {
-      margin-top: 120px;
+      margin-top: 80px;
       background: var(--graphite);
     }
 
@@ -596,7 +596,7 @@
 
     .p-cta {
       color: var(--platinum);
-      padding: 104px 48px 136px;
+      padding: 72px 48px 96px;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -612,11 +612,11 @@
     }
 
     .p-cta__title {
-      font-size: clamp(36px, 5.5vw, 76px);
+      font-size: clamp(28px, 4vw, 50px);
       font-weight: 900;
       letter-spacing: -0.04em;
-      line-height: 1.04;
-      margin-top: 24px;
+      line-height: 1.06;
+      margin-top: 20px;
       max-width: 800px;
     }
 
@@ -626,8 +626,8 @@
     }
 
     .p-cta__sub {
-      margin-top: 28px;
-      font-size: 15px;
+      margin-top: 24px;
+      font-size: 14px;
       line-height: 1.8;
       color: var(--grey);
       max-width: 520px;
@@ -647,12 +647,12 @@
     @media (max-width: 900px) {
       .p-inner { padding-left: 24px; padding-right: 24px; }
 
-      .p-hero { padding: 72px 0 64px; }
+      .p-hero { padding: 44px 0 40px; }
 
-      .p-photo img { height: 52vh; }
+      .p-photo img { height: 300px; }
       .p-photo__caption { left: 24px; }
 
-      .p-opening { padding: 80px 0 88px; }
+      .p-opening { padding: 56px 0 64px; }
 
       .p-opening__grid {
         grid-template-columns: 1fr;
@@ -661,7 +661,7 @@
 
       .p-chapter { position: static; }
 
-      .p-manifesto { padding: 96px 0 80px; }
+      .p-manifesto { padding: 64px 0 56px; }
 
       .p-manifesto__pillars { grid-template-columns: 1fr; }
 
@@ -673,8 +673,8 @@
 
       .p-pillar:last-child { border-bottom: none; }
 
-      .p-materials { padding-top: 88px; }
-      .p-materials__head { padding: 0 24px; margin-bottom: 48px; }
+      .p-materials { padding-top: 64px; }
+      .p-materials__head { padding: 0 24px; margin-bottom: 36px; }
 
       .p-duality { grid-template-columns: 1fr; }
 
@@ -695,7 +695,7 @@
 
       .p-duality__mark svg { width: 30px; height: 30px; }
 
-      .p-symbol { padding: 88px 0 96px; }
+      .p-symbol { padding: 64px 0 72px; }
 
       .p-symbol__grid {
         grid-template-columns: 1fr;
@@ -703,20 +703,20 @@
         margin-top: 40px;
       }
 
-      .p-experience { padding: 88px 0 24px; }
+      .p-experience { padding: 56px 0 16px; }
 
       .p-gallery { grid-template-columns: 1fr; }
 
-      .p-gallery__item img { height: 64vw; min-height: 240px; }
+      .p-gallery__item img { height: 62vw; min-height: 220px; max-height: 340px; }
 
       .p-experience__prose {
-        margin-top: 64px;
+        margin-top: 48px;
         padding: 0 24px;
       }
 
-      .p-cta-band { margin-top: 88px; }
+      .p-cta-band { margin-top: 64px; }
       .p-cta-divider { padding: 0 24px; }
-      .p-cta { padding: 80px 24px 104px; }
+      .p-cta { padding: 56px 24px 72px; }
 
       .p-cta__actions {
         flex-direction: column;
